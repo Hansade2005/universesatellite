@@ -55,7 +55,8 @@ export default function Footer() {
         </div>
         <div style={{ paddingTop: '1.5rem', borderTop: '1px solid rgba(255,255,255,0.04)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>
           <p style={{ fontSize: '0.75rem', color: 'var(--gray-600)' }}>© {new Date().getFullYear()} UniverS Satellite Sarl. {t('ft_rights')}</p>
-          <p style={{ fontSize: '0.72rem', color: 'var(--gray-600)' }}>{t('ft_by')} <a href="https://pixelways.co" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--red)', fontWeight: 600 }}>Pixelways Solutions Inc.</a></p>
+          {/* TODO: Restore Pixelways credit in future: {t('ft_by')} <a href="https://pixelways.co" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--red)', fontWeight: 600 }}>Pixelways Solutions Inc.</a> */}
+          <p style={{ fontSize: '0.72rem', color: 'var(--gray-600)' }}>{t('ft_by')} <a href="https://wa.me/237679719353" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--red)', fontWeight: 600 }}>Hans Ade</a></p>
         </div>
       </div>
       <style>{`
