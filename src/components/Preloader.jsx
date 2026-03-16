@@ -32,7 +32,7 @@ export default function Preloader() {
           </motion.div>
           <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }} style={{ textAlign: 'center' }}>
             <div style={{ fontFamily: 'var(--font-display)', fontWeight: 900, fontSize: 'clamp(1.2rem, 4vw, 1.6rem)', letterSpacing: '-0.02em' }}>
-              Univer<span style={{ color: 'var(--red)' }}>S</span>atellites
+              Univer<span style={{ color: 'var(--red)' }}>S</span> Satellite
             </div>
             <div style={{ fontSize: '0.65rem', color: 'var(--gray-500)', letterSpacing: '0.25em', textTransform: 'uppercase', marginTop: '0.4rem' }}>
               Le futur c'est ici

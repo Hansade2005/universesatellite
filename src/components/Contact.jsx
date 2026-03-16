@@ -13,6 +13,7 @@ export default function Contact() {
   const contactInfo = [
     { icon: HiPhone, label: t('ct_phone'), value: '+237 677 97 21 21', href: 'tel:+237677972121', sub: 'Founder : ONANENA OLOUME' },
     { icon: HiPhone, label: t('ct_mobile'), value: '+237 690 62 97 27', href: 'tel:+237690629727', sub: 'DG : BONA Beleng Brice' },
+    { icon: HiPhone, label: t('ct_phone') + ' 3', value: '+237 654 47 90 00', href: 'tel:+237654479000' },
     { icon: HiPhone, label: t('ct_whatsapp'), value: '+237 690 62 97 27', href: 'https://wa.me/237690629727' },
     { icon: HiMail, label: t('ct_email'), value: 'universatellites@gmail.com', href: 'mailto:universatellites@gmail.com' },
     { icon: HiGlobe, label: t('ct_web'), value: 'www.universsatellite.com', href: 'https://www.universsatellite.com' },

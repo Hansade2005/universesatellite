@@ -56,10 +56,10 @@ export default function Navbar() {
             <img src="/logo.jpeg" alt="UniSat Logo" style={{ height: '42px', borderRadius: '10px' }} />
             <div>
               <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '1.15rem', letterSpacing: '-0.02em' }}>
-                Univer<span style={{ color: 'var(--red)' }}>S</span>atellites
+                Univer<span style={{ color: 'var(--red)' }}>S</span> Satellite
               </span>
               <div style={{ fontSize: '0.6rem', color: 'var(--gray-500)', letterSpacing: '0.15em', textTransform: 'uppercase' }}>
-                Sarl • Le futur c'est ici
+                Sarl — Le futur c'est ici
               </div>
             </div>
           </a>

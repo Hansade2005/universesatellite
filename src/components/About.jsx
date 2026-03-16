@@ -17,13 +17,13 @@ export default function About() {
               <div style={{ position: 'absolute', top: '-30px', right: '-30px', width: '140px', height: '140px', background: 'var(--red)', borderRadius: '24px', transform: 'rotate(15deg)', opacity: 0.08 }} />
               <img src="/logo.jpeg" alt="UniSat" style={{ width: '120px', borderRadius: '18px', marginBottom: '2rem', position: 'relative', zIndex: 2 }} />
               <div style={{ position: 'relative', zIndex: 2 }}>
-                <div style={{ fontFamily: 'var(--font-display)', fontSize: '2.5rem', fontWeight: 900, lineHeight: 1.1 }}>Univer<span style={{ color: 'var(--red)' }}>S</span>atellites</div>
+                <div style={{ fontFamily: 'var(--font-display)', fontSize: '2.5rem', fontWeight: 900, lineHeight: 1.1 }}>Univer<span style={{ color: 'var(--red)' }}>S</span> Satellite</div>
                 <div style={{ fontFamily: 'var(--font-display)', fontSize: '0.8rem', fontWeight: 500, color: 'var(--gray-400)', letterSpacing: '0.12em', textTransform: 'uppercase', marginTop: '0.4rem' }}>Sarl • Le futur c'est ici</div>
               </div>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginTop: '2rem', position: 'relative', zIndex: 2 }}>
                 {[
-                  { label: 'N° RCCM', value: 'RC/YAE/2020/B/2353' },
-                  { label: t('about_founded'), value: '2020' },
+                  { label: 'N° RCCM', value: 'RC/YAE/2022/B/2353' },
+                  { label: t('about_founded'), value: '2022' },
                   { label: t('about_hq'), value: t('about_hq_val') },
                   { label: t('about_team'), value: t('about_team_val') },
                 ].map((info, i) => (
@@ -45,7 +45,7 @@ export default function About() {
               {t('about_title_1')} <span style={{ color: 'var(--red)' }}>{t('about_title_red')}</span>
             </h2>
             <p style={{ fontSize: '0.95rem', lineHeight: 1.85, color: 'var(--gray-300)', marginBottom: '1rem' }}>
-              <strong style={{ color: 'var(--white)' }}>UniverSatellites Sarl (UniS@t)</strong> {t('about_p1')}
+              <strong style={{ color: 'var(--white)' }}>UniverS Satellite Sarl (UniS@t)</strong> {t('about_p1')}
             </p>
             <p style={{ fontSize: '0.95rem', lineHeight: 1.85, color: 'var(--gray-300)', marginBottom: '2.5rem' }}>
               {t('about_p2_1')} <strong style={{ color: 'var(--white)' }}>{t('about_p2_addr')}</strong>{t('about_p2_2')}

@@ -17,12 +17,12 @@ export default function Footer() {
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.25rem' }}>
               <img src="/logo.jpeg" alt="UniSat" style={{ height: '48px', borderRadius: '12px' }} />
               <div>
-                <div style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '1.15rem' }}>Univer<span style={{ color: 'var(--red)' }}>S</span>atellites</div>
+                <div style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '1.15rem' }}>Univer<span style={{ color: 'var(--red)' }}>S</span> Satellite</div>
                 <div style={{ fontSize: '0.6rem', color: 'var(--gray-500)', letterSpacing: '0.15em', textTransform: 'uppercase' }}>Sarl — Le futur c'est ici</div>
               </div>
             </div>
             <p style={{ fontSize: '0.85rem', lineHeight: 1.8, color: 'var(--gray-400)', maxWidth: '300px' }}>{t('ft_desc')}</p>
-            <div style={{ marginTop: '1.25rem', fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: 'var(--gray-600)' }}>N°RCCM : RC/YAE/2020/B/2353</div>
+            <div style={{ marginTop: '1.25rem', fontFamily: 'var(--font-mono)', fontSize: '0.7rem', color: 'var(--gray-600)' }}>N°RCCM : RC/YAE/2022/B/2353</div>
           </div>
           <div>
             <h4 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '0.85rem', marginBottom: '1.25rem' }}>{t('ft_nav')}</h4>
@@ -41,6 +41,7 @@ export default function Footer() {
               {[
                 { icon: HiPhone, text: '+237 677 97 21 21 (Founder)' },
                 { icon: HiPhone, text: '+237 690 62 97 27 (DG)' },
+                { icon: HiPhone, text: '+237 654 47 90 00' },
                 { icon: HiPhone, text: '+237 690 62 97 27 (WhatsApp)' },
                 { icon: HiMail, text: 'universatellites@gmail.com' },
                 { icon: HiLocationMarker, text: 'NGOUSSO, Descente Eleveur, Yaoundé' },
@@ -53,7 +54,7 @@ export default function Footer() {
           </div>
         </div>
         <div style={{ paddingTop: '1.5rem', borderTop: '1px solid rgba(255,255,255,0.04)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '1rem' }}>
-          <p style={{ fontSize: '0.75rem', color: 'var(--gray-600)' }}>© {new Date().getFullYear()} UniverSatellites Sarl. {t('ft_rights')}</p>
+          <p style={{ fontSize: '0.75rem', color: 'var(--gray-600)' }}>© {new Date().getFullYear()} UniverS Satellite Sarl. {t('ft_rights')}</p>
           <p style={{ fontSize: '0.72rem', color: 'var(--gray-600)' }}>{t('ft_by')} <a href="https://pixelways.ca" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--red)', fontWeight: 600 }}>Pixelways Solutions Inc.</a></p>
         </div>
       </div>
