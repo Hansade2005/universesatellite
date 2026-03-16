@@ -11,7 +11,7 @@ export default function Footer() {
   ];
   return (
     <footer style={{ borderTop: '1px solid rgba(255,255,255,0.04)', background: 'var(--black-soft)' }}>
-      <div className="container" style={{ padding: '4rem 2rem 2rem' }}>
+      <div className="container" style={{ padding: 'clamp(2rem, 4vw, 4rem) 1.5rem 2rem' }}>
         <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1.5fr', gap: '3rem', marginBottom: '3rem' }} className="footer-grid">
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.25rem' }}>

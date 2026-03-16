@@ -13,7 +13,7 @@ function ServiceCard({ service, index, icon: Icon, isHighlighted }) {
       style={{
         position: 'relative', background: isHighlighted ? 'linear-gradient(135deg, rgba(227,6,19,0.12), rgba(227,6,19,0.04))' : 'var(--black-card)',
         border: isHighlighted ? '1px solid rgba(227,6,19,0.25)' : '1px solid rgba(255,255,255,0.06)',
-        borderRadius: '24px', padding: '2.5rem 2rem', overflow: 'hidden', cursor: 'default',
+        borderRadius: '24px', padding: 'clamp(1.5rem, 3vw, 2.5rem) clamp(1.25rem, 3vw, 2rem)', overflow: 'hidden', cursor: 'default',
         transition: 'all 0.5s cubic-bezier(0.16,1,0.3,1)', display: 'flex', flexDirection: 'column',
       }}
       onMouseEnter={e => { e.currentTarget.style.border = '1px solid rgba(227,6,19,0.3)'; e.currentTarget.style.transform = 'translateY(-6px)'; e.currentTarget.style.boxShadow = '0 20px 60px rgba(227,6,19,0.08)'; }}
@@ -40,10 +40,10 @@ export default function Services() {
   const services = t('svc');
 
   return (
-    <section id="services" style={{ padding: '7rem 0', position: 'relative' }}>
+    <section id="services" style={{ padding: 'clamp(3.5rem, 8vw, 7rem) 0', position: 'relative' }}>
       <div style={{ position: 'absolute', left: '-15%', top: '30%', width: '500px', height: '500px', background: 'radial-gradient(circle, rgba(227,6,19,0.05), transparent 70%)', borderRadius: '50%', pointerEvents: 'none' }} />
       <div className="container">
-        <div ref={headerRef} style={{ textAlign: 'center', marginBottom: '4rem' }}>
+        <div ref={headerRef} style={{ textAlign: 'center', marginBottom: 'clamp(2rem, 5vw, 4rem)' }}>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={headerInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }}
             style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem', justifyContent: 'center' }}>
             <div style={{ width: '40px', height: '2px', background: 'var(--red)' }} />
@@ -57,7 +57,7 @@ export default function Services() {
           <motion.p initial={{ opacity: 0, y: 20 }} animate={headerInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: 0.2 }}
             style={{ fontSize: '1rem', color: 'var(--gray-400)', maxWidth: '550px', margin: '1rem auto 0', lineHeight: 1.7 }}>{t('svc_subtitle')}</motion.p>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))', gap: '1.25rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 360px), 1fr))', gap: '1.25rem' }}>
           {services.map((s, i) => <ServiceCard key={i} service={s} index={i} icon={icons[i]} isHighlighted={i === 0} />)}
         </div>
       </div>

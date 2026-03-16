@@ -9,11 +9,11 @@ export default function About() {
   const [ref, inView] = useInView({ threshold: 0.15, triggerOnce: true });
   const values = t('about_values');
   return (
-    <section id="about" style={{ padding: '7rem 0', position: 'relative' }}>
+    <section id="about" style={{ padding: 'clamp(3.5rem, 8vw, 7rem) 0', position: 'relative' }}>
       <div className="container" ref={ref}>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', alignItems: 'center' }} className="about-grid">
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'clamp(2.5rem, 5vw, 5rem)', alignItems: 'center' }} className="about-grid">
           <motion.div initial={{ opacity: 0, x: -50 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}>
-            <div style={{ position: 'relative', borderRadius: '28px', overflow: 'hidden', background: 'linear-gradient(135deg, rgba(227,6,19,0.06), rgba(227,6,19,0.02))', border: '1px solid rgba(227,6,19,0.1)', padding: '3rem' }}>
+            <div style={{ position: 'relative', borderRadius: '28px', overflow: 'hidden', background: 'linear-gradient(135deg, rgba(227,6,19,0.06), rgba(227,6,19,0.02))', border: '1px solid rgba(227,6,19,0.1)', padding: 'clamp(1.5rem, 4vw, 3rem)' }}>
               <div style={{ position: 'absolute', top: '-30px', right: '-30px', width: '140px', height: '140px', background: 'var(--red)', borderRadius: '24px', transform: 'rotate(15deg)', opacity: 0.08 }} />
               <img src="/logo.jpeg" alt="UniSat" style={{ width: '120px', borderRadius: '18px', marginBottom: '2rem', position: 'relative', zIndex: 2 }} />
               <div style={{ position: 'relative', zIndex: 2 }}>

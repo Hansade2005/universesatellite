@@ -11,9 +11,9 @@ export default function Process() {
   const [ref, inView] = useInView({ threshold: 0.1, triggerOnce: true });
   const steps = t('proc');
   return (
-    <section id="process" style={{ padding: '7rem 0', position: 'relative' }}>
+    <section id="process" style={{ padding: 'clamp(3.5rem, 8vw, 7rem) 0', position: 'relative' }}>
       <div className="container">
-        <div ref={ref} style={{ textAlign: 'center', marginBottom: '4rem' }}>
+        <div ref={ref} style={{ textAlign: 'center', marginBottom: 'clamp(2rem, 5vw, 4rem)' }}>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }}
             style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem', justifyContent: 'center' }}>
             <div style={{ width: '40px', height: '2px', background: 'var(--red)' }} />
@@ -27,13 +27,13 @@ export default function Process() {
           <motion.p initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: 0.2 }}
             style={{ fontSize: '1rem', color: 'var(--gray-400)', maxWidth: '500px', margin: '1rem auto 0', lineHeight: 1.7 }}>{t('proc_subtitle')}</motion.p>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '1.25rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))', gap: '1.25rem' }}>
           {steps.map((step, i) => {
             const [cardRef, cardInView] = useInView({ threshold: 0.2, triggerOnce: true });
             const Icon = stepIcons[i];
             return (
               <motion.div key={i} ref={cardRef} initial={{ opacity: 0, y: 40 }} animate={cardInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: i * 0.08 }}
-                style={{ position: 'relative', padding: '2rem', borderRadius: '20px', background: 'var(--black-card)', border: '1px solid rgba(255,255,255,0.05)', transition: 'all 0.4s ease' }}
+                style={{ position: 'relative', padding: 'clamp(1.25rem, 3vw, 2rem)', borderRadius: '20px', background: 'var(--black-card)', border: '1px solid rgba(255,255,255,0.05)', transition: 'all 0.4s ease' }}
                 onMouseEnter={e => { e.currentTarget.style.borderColor = 'rgba(227,6,19,0.2)'; e.currentTarget.style.transform = 'translateY(-4px)'; }}
                 onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.05)'; e.currentTarget.style.transform = 'translateY(0)'; }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '1.25rem' }}>

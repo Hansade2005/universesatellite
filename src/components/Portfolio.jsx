@@ -39,9 +39,9 @@ export default function Portfolio() {
   const [ref, inView] = useInView({ threshold: 0.1, triggerOnce: true });
   const projects = t('port');
   return (
-    <section id="portfolio" style={{ padding: '7rem 0', position: 'relative', background: 'linear-gradient(180deg, var(--black), var(--black-soft), var(--black))' }}>
+    <section id="portfolio" style={{ padding: 'clamp(3.5rem, 8vw, 7rem) 0', position: 'relative', background: 'linear-gradient(180deg, var(--black), var(--black-soft), var(--black))' }}>
       <div className="container">
-        <div ref={ref} style={{ textAlign: 'center', marginBottom: '4rem' }}>
+        <div ref={ref} style={{ textAlign: 'center', marginBottom: 'clamp(2rem, 5vw, 4rem)' }}>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }}
             style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem', justifyContent: 'center' }}>
             <div style={{ width: '40px', height: '2px', background: 'var(--red)' }} />
@@ -53,7 +53,7 @@ export default function Portfolio() {
             {t('port_title_1')} <span style={{ color: 'var(--red)' }}>{t('port_title_red')}</span>
           </motion.h2>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '1.25rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))', gap: '1.25rem' }}>
           {projects.map((p, i) => <ProjectCard key={i} project={p} index={i} />)}
         </div>
       </div>

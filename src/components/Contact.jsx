@@ -48,7 +48,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" style={{ padding: '7rem 0', position: 'relative', background: 'linear-gradient(180deg, var(--black), rgba(227,6,19,0.015))' }}>
+    <section id="contact" style={{ padding: 'clamp(3.5rem, 8vw, 7rem) 0', position: 'relative', background: 'linear-gradient(180deg, var(--black), rgba(227,6,19,0.015))' }}>
       <div className="container" ref={ref}>
         <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }}
@@ -95,7 +95,7 @@ export default function Contact() {
           </motion.div>
 
           <motion.div initial={{ opacity: 0, x: 40 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.7, delay: 0.3 }}
-            style={{ background: 'var(--black-card)', border: '1px solid rgba(255,255,255,0.06)', borderRadius: '24px', padding: '2.5rem' }}>
+            style={{ background: 'var(--black-card)', border: '1px solid rgba(255,255,255,0.06)', borderRadius: '24px', padding: 'clamp(1.25rem, 4vw, 2.5rem)' }}>
             <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '1.3rem', fontWeight: 700, marginBottom: '1.5rem' }}>{t('ct_form_title')}</h3>
             <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }} className="form-row">

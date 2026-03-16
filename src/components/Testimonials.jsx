@@ -14,9 +14,9 @@ export default function Testimonials() {
   const tm = testimonials[current];
 
   return (
-    <section id="testimonials" style={{ padding: '7rem 0', position: 'relative', background: 'linear-gradient(180deg, var(--black), rgba(227,6,19,0.015), var(--black))' }}>
+    <section id="testimonials" style={{ padding: 'clamp(3.5rem, 8vw, 7rem) 0', position: 'relative', background: 'linear-gradient(180deg, var(--black), rgba(227,6,19,0.015), var(--black))' }}>
       <div className="container" ref={ref}>
-        <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
+        <div style={{ textAlign: 'center', marginBottom: 'clamp(2rem, 5vw, 4rem)' }}>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }}
             style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem', justifyContent: 'center' }}>
             <div style={{ width: '40px', height: '2px', background: 'var(--red)' }} />
@@ -29,7 +29,7 @@ export default function Testimonials() {
           </motion.h2>
         </div>
         <motion.div initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.7, delay: 0.2 }}
-          style={{ maxWidth: '800px', margin: '0 auto', background: 'var(--black-card)', border: '1px solid rgba(255,255,255,0.06)', borderRadius: '28px', padding: '3rem', textAlign: 'center' }}>
+          style={{ maxWidth: '800px', margin: '0 auto', background: 'var(--black-card)', border: '1px solid rgba(255,255,255,0.06)', borderRadius: '28px', padding: 'clamp(1.5rem, 4vw, 3rem)', textAlign: 'center' }}>
           <div style={{ fontFamily: 'var(--font-display)', fontSize: '6rem', fontWeight: 900, lineHeight: 0.8, color: 'var(--red)', opacity: 0.15, marginBottom: '1rem' }}>"</div>
           <AnimatePresence mode="wait">
             <motion.div key={current} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} transition={{ duration: 0.4 }}>

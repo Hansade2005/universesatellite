@@ -12,7 +12,7 @@ export default function TechStack() {
   const { t } = useI18n();
   const [ref, inView] = useInView({ threshold: 0.1, triggerOnce: true });
   return (
-    <section style={{ padding: '5rem 0', borderTop: '1px solid rgba(255,255,255,0.03)', borderBottom: '1px solid rgba(255,255,255,0.03)' }}>
+    <section style={{ padding: 'clamp(2.5rem, 5vw, 5rem) 0', borderTop: '1px solid rgba(255,255,255,0.03)', borderBottom: '1px solid rgba(255,255,255,0.03)' }}>
       <div className="container" ref={ref}>
         <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }}
@@ -28,7 +28,7 @@ export default function TechStack() {
           style={{ display: 'flex', flexWrap: 'wrap', gap: '0.6rem', justifyContent: 'center', maxWidth: '900px', margin: '0 auto' }}>
           {techs.map((tc, i) => (
             <motion.div key={i} initial={{ opacity: 0, scale: 0.8 }} animate={inView ? { opacity: 1, scale: 1 } : {}} transition={{ duration: 0.4, delay: 0.2 + i * 0.03 }}
-              style={{ padding: '0.6rem 1.25rem', borderRadius: '50px', background: 'var(--black-card)', border: '1px solid rgba(255,255,255,0.06)', fontFamily: 'var(--font-display)', fontSize: '0.82rem', fontWeight: 600, color: 'var(--gray-300)', transition: 'all 0.3s ease', cursor: 'default', display: 'flex', alignItems: 'center', gap: '0.5rem' }}
+              style={{ padding: '0.5rem 1rem', borderRadius: '50px', background: 'var(--black-card)', border: '1px solid rgba(255,255,255,0.06)', fontFamily: 'var(--font-display)', fontSize: '0.82rem', fontWeight: 600, color: 'var(--gray-300)', transition: 'all 0.3s ease', cursor: 'default', display: 'flex', alignItems: 'center', gap: '0.5rem' }}
               onMouseEnter={e => { e.currentTarget.style.borderColor = 'rgba(227,6,19,0.3)'; e.currentTarget.style.color = 'var(--red)'; e.currentTarget.style.background = 'rgba(227,6,19,0.06)'; }}
               onMouseLeave={e => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.06)'; e.currentTarget.style.color = 'var(--gray-300)'; e.currentTarget.style.background = 'var(--black-card)'; }}>
               {tc.name} <span style={{ fontSize: '0.6rem', color: 'var(--gray-600)', fontWeight: 400, fontFamily: 'var(--font-mono)' }}>{tc.cat}</span>
