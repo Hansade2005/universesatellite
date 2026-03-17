@@ -18,7 +18,8 @@ export default function About() {
               <img src="/logo.jpeg" alt="UniSat" style={{ width: '120px', borderRadius: '18px', marginBottom: '2rem', position: 'relative', zIndex: 2 }} />
               <div style={{ position: 'relative', zIndex: 2 }}>
                 <div style={{ fontFamily: 'var(--font-display)', fontSize: '2.5rem', fontWeight: 900, lineHeight: 1.1 }}>
-                  <span style={{ color: '#E83E5B' }}>UniverS</span> <span style={{ color: '#1a233a' }}>atellites</span>
+                  <div><span style={{ color: '#E83E5B' }}>UniverS</span></div>
+                  <div><span style={{ color: '#1a233a' }}>atellites</span></div>
                 </div>
                 <div style={{ fontFamily: 'var(--font-display)', fontSize: '0.8rem', fontWeight: 500, color: 'var(--gray-400)', letterSpacing: '0.12em', textTransform: 'uppercase', marginTop: '0.4rem' }}>Sarl • Le futur c'est ici</div>
               </div>
@@ -48,7 +49,9 @@ export default function About() {
               {t('about_title_1')} <span style={{ color: 'var(--red)' }}>{t('about_title_red')}</span>
             </h2>
             <p style={{ fontSize: '0.95rem', lineHeight: 1.85, color: 'var(--gray-300)', marginBottom: '1rem' }}>
-              <strong style={{ color: 'var(--white)' }}>UniverS Satellite Sarl (UniS@t)</strong> {t('about_p1')}
+              <strong style={{ color: 'var(--white)' }}>
+                <span style={{ color: '#E83E5B' }}>UniverS</span> <span style={{ color: '#1a233a' }}>atellites</span> Sarl (UniS@t)
+              </strong> {t('about_p1')}
             </p>
             <p style={{ fontSize: '0.95rem', lineHeight: 1.85, color: 'var(--gray-300)', marginBottom: '2.5rem' }}>
               {t('about_p2_1')} <strong style={{ color: 'var(--white)' }}>{t('about_p2_addr')}</strong>{t('about_p2_2')}
