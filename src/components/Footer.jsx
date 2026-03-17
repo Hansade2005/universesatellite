@@ -21,7 +21,7 @@ export default function Footer() {
                   <span style={{ color: '#E83E5B' }}>UniverS</span>
                 </div>
                 <div style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '1.15rem' }}>
-                  <span style={{ color: '#1a233a' }}>atellites</span>
+                  <span style={{ color: '#ffffff' }}>atellites</span>
                 </div>
                 <div style={{ fontSize: '0.55rem', color: 'var(--gray-500)', letterSpacing: '0.15em', textTransform: 'uppercase', marginTop: '0.25rem' }}>Sarl — Le futur c'est ici</div>
               </div>
