@@ -44,6 +44,8 @@ const translations = {
       { title: 'Assistance & Conseil', desc: "Accompagnement technique personnalisé, audit de vos systèmes existants et conseil stratégique pour vos projets de transformation digitale.", features: ['Audit Technique', 'Conseil Stratégique', 'Support Dédié', 'Migration Cloud'] },
       { title: 'Formation Professionnelle', desc: "Programmes de formation sur mesure en technologies de l'information, développement web, administration réseau et outils numériques.", features: ['Dev Web/Mobile', 'Admin Réseau', 'Bureautique Avancée', 'Certifications IT'] },
       { title: 'Data Analyst', desc: "Analyse et interprétation de vos données pour éclairer vos décisions stratégiques. Tableaux de bord interactifs, reporting avancé et insights actionnables pour optimiser votre performance.", features: ['Analyse de Données', 'Tableaux de Bord', 'Reporting', 'Business Intelligence'] },
+      { title: 'Sécurité Informatique', desc: "Protection complète de vos systèmes et données contre les cybermenaces. Audit de sécurité, mise en place de solutions de protection et gestion des vulnérabilités.", features: ['Audit Sécurité', 'Protection Données', 'Anti-malware', 'Gestion Accès'] },
+      { title: 'Vente Matériel Informatique', desc: "Fourniture d'équipements informatiques de qualité : ordinateurs, serveurs, équipements réseau et périphériques. Installation et configuration incluses.", features: ['Ordinateurs', 'Serveurs', 'Équipements Réseau', 'Périphériques'] },
     ],
 
     // Portfolio
@@ -200,6 +202,8 @@ const translations = {
       { title: 'Support & Consulting', desc: 'Personalized technical support, audit of existing systems and strategic consulting for your digital transformation projects.', features: ['Technical Audit', 'Strategic Consulting', 'Dedicated Support', 'Cloud Migration'] },
       { title: 'Professional Training', desc: 'Customized training programs in information technology, web development, network administration and digital tools.', features: ['Web/Mobile Dev', 'Network Admin', 'Advanced Office', 'IT Certifications'] },
       { title: 'Data Analyst', desc: 'Analysis and interpretation of your data to inform your strategic decisions. Interactive dashboards, advanced reporting and actionable insights to optimize your performance.', features: ['Data Analysis', 'Dashboards', 'Reporting', 'Business Intelligence'] },
+      { title: 'IT Security', desc: 'Complete protection of your systems and data against cyber threats. Security audits, implementation of protection solutions and vulnerability management.', features: ['Security Audit', 'Data Protection', 'Anti-malware', 'Access Management'] },
+      { title: 'Computer Equipment Sales', desc: 'Supply of quality IT equipment: computers, servers, network equipment and peripherals. Installation and configuration included.', features: ['Computers', 'Servers', 'Network Equipment', 'Peripherals'] },
     ],
 
     port_label: 'Our Projects',
