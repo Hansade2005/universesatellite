@@ -20,10 +20,11 @@ export default function About() {
                 <div style={{ fontFamily: 'var(--font-display)', fontSize: '2.5rem', fontWeight: 900, lineHeight: 1.1 }}>Univer<span style={{ color: 'var(--red)' }}>S</span> Satellite</div>
                 <div style={{ fontFamily: 'var(--font-display)', fontSize: '0.8rem', fontWeight: 500, color: 'var(--gray-400)', letterSpacing: '0.12em', textTransform: 'uppercase', marginTop: '0.4rem' }}>Sarl • Le futur c'est ici</div>
               </div>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginTop: '2rem', position: 'relative', zIndex: 2 }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '0.75rem', marginTop: '2rem', position: 'relative', zIndex: 2 }}>
                 {[
                   { label: 'N° RCCM', value: 'RC/YAE/2022/B/2353' },
-                  { label: t('about_founded'), value: '2022' },
+                  { label: t('about_founded'), value: '2020' },
+                  { label: t('about_registered'), value: '2022' },
                   { label: t('about_hq'), value: t('about_hq_val') },
                   { label: t('about_team'), value: t('about_team_val') },
                 ].map((info, i) => (

@@ -1,9 +1,9 @@
 import { useI18n } from '../i18n';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { HiCode, HiCog, HiGlobe, HiColorSwatch, HiSupport, HiAcademicCap } from 'react-icons/hi';
+import { HiCode, HiCog, HiGlobe, HiColorSwatch, HiSupport, HiAcademicCap, HiChartBar } from 'react-icons/hi';
 
-const icons = [HiCode, HiCog, HiGlobe, HiColorSwatch, HiSupport, HiAcademicCap];
+const icons = [HiCode, HiCog, HiGlobe, HiColorSwatch, HiSupport, HiAcademicCap, HiChartBar];
 
 function ServiceCard({ service, index, icon: Icon, isHighlighted }) {
   const [ref, inView] = useInView({ threshold: 0.15, triggerOnce: true });

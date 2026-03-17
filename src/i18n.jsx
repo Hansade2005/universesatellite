@@ -43,6 +43,7 @@ const translations = {
       { title: 'Gadgets & Communication Visuelle', desc: "Conception créative de gadgets publicitaires et supports de communication visuelle pour renforcer votre image de marque et votre visibilité.", features: ['Identité Visuelle', 'Supports Imprimés', 'Signalétique', 'Objets Publicitaires'] },
       { title: 'Assistance & Conseil', desc: "Accompagnement technique personnalisé, audit de vos systèmes existants et conseil stratégique pour vos projets de transformation digitale.", features: ['Audit Technique', 'Conseil Stratégique', 'Support Dédié', 'Migration Cloud'] },
       { title: 'Formation Professionnelle', desc: "Programmes de formation sur mesure en technologies de l'information, développement web, administration réseau et outils numériques.", features: ['Dev Web/Mobile', 'Admin Réseau', 'Bureautique Avancée', 'Certifications IT'] },
+      { title: 'Data Analyst', desc: "Analyse et interprétation de vos données pour éclairer vos décisions stratégiques. Tableaux de bord interactifs, reporting avancé et insights actionnables pour optimiser votre performance.", features: ['Analyse de Données', 'Tableaux de Bord', 'Reporting', 'Business Intelligence'] },
     ],
 
     // Portfolio
@@ -70,6 +71,7 @@ const translations = {
     about_hq_val: 'Yaoundé, Cameroun',
     about_team: 'Équipe',
     about_team_val: '15+ Experts',
+    about_registered: 'Enregistrée en',
     about_values: [
       { title: 'Fiabilité', desc: 'Solutions robustes testées pour le marché africain' },
       { title: 'Innovation', desc: 'Technologies de pointe adaptées à vos besoins' },
@@ -197,6 +199,7 @@ const translations = {
       { title: 'Branding & Visual Communication', desc: 'Creative design of promotional items and visual communication materials to strengthen your brand image and visibility.', features: ['Visual Identity', 'Print Media', 'Signage', 'Promotional Items'] },
       { title: 'Support & Consulting', desc: 'Personalized technical support, audit of existing systems and strategic consulting for your digital transformation projects.', features: ['Technical Audit', 'Strategic Consulting', 'Dedicated Support', 'Cloud Migration'] },
       { title: 'Professional Training', desc: 'Customized training programs in information technology, web development, network administration and digital tools.', features: ['Web/Mobile Dev', 'Network Admin', 'Advanced Office', 'IT Certifications'] },
+      { title: 'Data Analyst', desc: 'Analysis and interpretation of your data to inform your strategic decisions. Interactive dashboards, advanced reporting and actionable insights to optimize your performance.', features: ['Data Analysis', 'Dashboards', 'Reporting', 'Business Intelligence'] },
     ],
 
     port_label: 'Our Projects',
@@ -222,6 +225,7 @@ const translations = {
     about_hq_val: 'Yaoundé, Cameroon',
     about_team: 'Team',
     about_team_val: '15+ Experts',
+    about_registered: 'Registered',
     about_values: [
       { title: 'Reliability', desc: 'Robust solutions tested for the African market' },
       { title: 'Innovation', desc: 'Cutting-edge technologies adapted to your needs' },
