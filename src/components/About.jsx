@@ -17,7 +17,9 @@ export default function About() {
               <div style={{ position: 'absolute', top: '-30px', right: '-30px', width: '140px', height: '140px', background: 'var(--red)', borderRadius: '24px', transform: 'rotate(15deg)', opacity: 0.08 }} />
               <img src="/logo.jpeg" alt="UniSat" style={{ width: '120px', borderRadius: '18px', marginBottom: '2rem', position: 'relative', zIndex: 2 }} />
               <div style={{ position: 'relative', zIndex: 2 }}>
-                <div style={{ fontFamily: 'var(--font-display)', fontSize: '2.5rem', fontWeight: 900, lineHeight: 1.1 }}>Univer<span style={{ color: 'var(--red)' }}>S</span> Satellite</div>
+                <div style={{ fontFamily: 'var(--font-display)', fontSize: '2.5rem', fontWeight: 900, lineHeight: 1.1 }}>
+                  <span style={{ color: '#E83E5B' }}>UniverS</span> <span style={{ color: '#1a233a' }}>atellites</span>
+                </div>
                 <div style={{ fontFamily: 'var(--font-display)', fontSize: '0.8rem', fontWeight: 500, color: 'var(--gray-400)', letterSpacing: '0.12em', textTransform: 'uppercase', marginTop: '0.4rem' }}>Sarl • Le futur c'est ici</div>
               </div>
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '0.75rem', marginTop: '2rem', position: 'relative', zIndex: 2 }}>
