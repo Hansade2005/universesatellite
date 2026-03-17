@@ -54,11 +54,14 @@ export default function Navbar() {
         <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <a href="#hero" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
             <img src="/logo.jpeg" alt="UniSat Logo" style={{ height: '42px', borderRadius: '10px' }} />
-            <div>
-              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '1.15rem', letterSpacing: '-0.02em' }}>
-                Univer<span style={{ color: 'var(--red)' }}>S</span> Satellite
-              </span>
-              <div style={{ fontSize: '0.6rem', color: 'var(--gray-500)', letterSpacing: '0.15em', textTransform: 'uppercase' }}>
+            <div style={{ lineHeight: 1.1 }}>
+              <div style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '1.15rem', letterSpacing: '-0.02em' }}>
+                <span style={{ color: '#E83E5B' }}>UniverS</span>
+              </div>
+              <div style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '1.15rem', letterSpacing: '-0.02em' }}>
+                <span style={{ color: '#1a233a' }}>atellites</span>
+              </div>
+              <div style={{ fontSize: '0.55rem', color: 'var(--gray-500)', letterSpacing: '0.15em', textTransform: 'uppercase', marginTop: '0.25rem' }}>
                 Sarl — Le futur c'est ici
               </div>
             </div>

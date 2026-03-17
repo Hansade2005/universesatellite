@@ -16,9 +16,14 @@ export default function Footer() {
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.25rem' }}>
               <img src="/logo.jpeg" alt="UniSat" style={{ height: '48px', borderRadius: '12px' }} />
-              <div>
-                <div style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '1.15rem' }}>Univer<span style={{ color: 'var(--red)' }}>S</span> Satellite</div>
-                <div style={{ fontSize: '0.6rem', color: 'var(--gray-500)', letterSpacing: '0.15em', textTransform: 'uppercase' }}>Sarl — Le futur c'est ici</div>
+              <div style={{ lineHeight: 1.1 }}>
+                <div style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '1.15rem' }}>
+                  <span style={{ color: '#E83E5B' }}>UniverS</span>
+                </div>
+                <div style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '1.15rem' }}>
+                  <span style={{ color: '#1a233a' }}>atellites</span>
+                </div>
+                <div style={{ fontSize: '0.55rem', color: 'var(--gray-500)', letterSpacing: '0.15em', textTransform: 'uppercase', marginTop: '0.25rem' }}>Sarl — Le futur c'est ici</div>
               </div>
             </div>
             <p style={{ fontSize: '0.85rem', lineHeight: 1.8, color: 'var(--gray-400)', maxWidth: '300px' }}>{t('ft_desc')}</p>
