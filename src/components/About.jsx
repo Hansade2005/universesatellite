@@ -18,8 +18,8 @@ export default function About() {
               <img src="/logo.jpeg" alt="UniSat" style={{ width: '160px', borderRadius: '18px', marginBottom: '2rem', position: 'relative', zIndex: 2 }} />
               <div style={{ position: 'relative', zIndex: 2 }}>
                 <div style={{ fontFamily: 'var(--font-display)', fontSize: '2.5rem', fontWeight: 900, lineHeight: 1.1 }}>
-                  <div><span style={{ color: '#E83E5B' }}>UniverS</span></div>
-                  <div><span style={{ color: '#ffffff' }}>atellites</span></div>
+                  <div><span style={{ color: '#E83E5B' }}>Univer</span></div>
+                  <div><span style={{ color: '#ffffff' }}>Satellites</span></div>
                 </div>
                 <div style={{ fontFamily: 'var(--font-display)', fontSize: '0.8rem', fontWeight: 500, color: 'var(--gray-400)', letterSpacing: '0.12em', textTransform: 'uppercase', marginTop: '0.4rem' }}>Sarl • Le futur c'est ici</div>
               </div>
