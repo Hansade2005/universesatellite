@@ -50,7 +50,7 @@ export default function About() {
             </h2>
             <p style={{ fontSize: '0.95rem', lineHeight: 1.85, color: 'var(--gray-300)', marginBottom: '1rem' }}>
               <strong style={{ color: 'var(--white)' }}>
-                <span style={{ color: '#E83E5B' }}>UniverS</span> <span style={{ color: '#ffffff' }}>atellites</span> Sarl (UniS@t)
+                <span style={{ color: '#E83E5B' }}>Univer</span> <span style={{ color: '#ffffff' }}>Satellites</span> Sarl (UniS@t)
               </strong> {t('about_p1')}
             </p>
             <p style={{ fontSize: '0.95rem', lineHeight: 1.85, color: 'var(--gray-300)', marginBottom: '2.5rem' }}>
