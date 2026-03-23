@@ -4,7 +4,8 @@ import { useInView } from 'react-intersection-observer';
 const techs = [
   { name: 'React', cat: 'Frontend' },{ name: 'Next.js', cat: 'Frontend' },{ name: 'Vue.js', cat: 'Frontend' },
   { name: 'Node.js', cat: 'Backend' },{ name: 'Python', cat: 'Backend' },{ name: 'PHP/Laravel', cat: 'Backend' },
-  { name: 'PostgreSQL', cat: 'Database' },{ name: 'MongoDB', cat: 'Database' },{ name: 'AWS', cat: 'Cloud' },
+  { name: 'PostgreSQL', cat: 'Database' },{ name: 'MongoDB', cat: 'Database' },{ name: 'SQL Server', cat: 'Database' },
+  { name: 'Power BI', cat: 'Data' },{ name: 'Tableau', cat: 'Data' },{ name: 'AWS', cat: 'Cloud' },
   { name: 'Docker', cat: 'DevOps' },{ name: 'React Native', cat: 'Mobile' },{ name: 'Flutter', cat: 'Mobile' },
   { name: 'Cisco', cat: 'Network' },{ name: 'MikroTik', cat: 'Network' },{ name: 'Figma', cat: 'Design' },{ name: 'WordPress', cat: 'CMS' },
 ];
