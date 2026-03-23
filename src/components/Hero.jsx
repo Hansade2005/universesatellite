@@ -66,12 +66,20 @@ function HeroVisual() {
         style={{
           position: 'absolute', inset: '18%', borderRadius: '50%',
           border: '1px solid rgba(255,255,255,0.04)',
+          display: 'flex', alignItems: 'center', justifyContent: 'center',
         }}
       >
         <div style={{
           position: 'absolute', bottom: '-4px', left: '50%', transform: 'translateX(-50%)',
           width: '8px', height: '8px', borderRadius: '50%', background: 'rgba(255,255,255,0.3)',
         }} />
+        <div style={{
+          position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
+          fontFamily: 'var(--font-display)', fontSize: '0.55rem', fontWeight: 600,
+          color: 'rgba(255,255,255,0.7)', textAlign: 'center', whiteSpace: 'nowrap',
+        }}>
+          Univers Satellites<br />(UniS@t)
+        </div>
       </motion.div>
 
       {/* Center logo */}
